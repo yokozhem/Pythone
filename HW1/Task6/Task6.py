@@ -25,3 +25,32 @@ if sum1 == sum2:
 else:
     print("Увы, но нет, повезет в другой раз")
 
+
+# Второй вариант
+# number = input("Введите номер билета: ")
+
+# first_sum = int(number[0]) + int(number[1]) + int(number[2])
+# second_sum = int(number[3]) + int(number[4]) + int(number[5])
+
+# if first_sum == second_sum:
+#     print("yes")
+# else:
+#     print("no")
+
+# Третий вариант решения задачи
+
+# number = input("Введите номер билета: ")
+
+# # Проверяем, что введен корректный шестизначный номер
+# if len(number) != 6 or not number.isdigit():
+#     print("Некорректный номер билета")
+# else:
+#     # Суммируем первые и последние три цифры номера
+#     first_sum = sum(int(x) for x in number[:3])
+#     second_sum = sum(int(x) for x in number[3:])
+
+#     # Проверяем, равны ли суммы
+#     if first_sum == second_sum:
+#         print("Билет счастливый!")
+#     else:
+#         print("Билет несчастливый :(")

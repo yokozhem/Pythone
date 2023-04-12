@@ -10,8 +10,10 @@
 # 60 -> 10  40  10
 
 paper_shadoof=int(input("Введите чило: "))
-petya_serezha = int(paper_shadoof / 3 /2)
-katya = int(petya_serezha*2)
-
-print(f"Петя сделал {petya_serezha}, Сережа сделал {petya_serezha}, Катя сделала {katya}")
+if paper_shadoof%6 != 0:
+    print("Ваше число разделить нельзя")
+else:
+    petya_serezha = int(paper_shadoof / 3 /2)
+    katya = int(petya_serezha*2)
+    print(f"Петя сделал {petya_serezha}, Сережа сделал {petya_serezha}, Катя сделала {katya}")
 
