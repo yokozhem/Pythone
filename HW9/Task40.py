@@ -5,4 +5,4 @@ import pandas as pd
 
 df = pd.read_csv('/Users/pelmeshka/Documents/Обучение/Python/HomeWork/HW9/california_housing_train.csv')
 
-print(df[df.population <= 500]['median_house_value'].median())
+print(df[df.population <= 500]['median_house_value'].mean())
